@@ -8,16 +8,9 @@ sys.path.append("../")
 from fondant.pipeline import ComponentOp, Pipeline
 
 
-def create_directory_if_not_exists(path):
-    p_base_path = Path(path).resolve()
-    p_base_path.mkdir(parents=True, exist_ok=True)
-    return str(p_base_path)
-
-
 PIPELINE_NAME = "cc-image-filter-pipeline"
 PIPELINE_DESCRIPTION = "Load cc image dataset"
 BASE_PATH = "./data"
-BASE_PATH = create_directory_if_not_exists(BASE_PATH)
 
 # Define pipeline
 pipeline = Pipeline(pipeline_name=PIPELINE_NAME, base_path=BASE_PATH)

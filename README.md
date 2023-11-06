@@ -14,13 +14,13 @@ Pipeline Steps:
 
 - [Load from Huggingface Hub](https://github.com/ml6team/fondant/tree/main/components/load_from_hf_hub):
   The pipeline begins by loading the image dataset from Huggingface Hub.
-- [Download Images](https://github.com/ml6team/fondant/tree/main/components/download_images): 
+- [Download Images](https://github.com/ml6team/fondant/tree/main/components/download_images):
   The download image component download images and stores them to parquet.
 
 ## Running the sample pipeline and explore the data
 
-Accordingly, the getting started documentation, we can run the pipeline by using the `LocalRunner`
-as follow:
+Accordingly, the getting started documentation, you can go to the `src` folder and run the pipeline
+by using the `LocalRunner` as follow:
 
 ```bash
 fondant run local pipeline.py

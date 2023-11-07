@@ -5,12 +5,13 @@ import sys
 
 logger = logging.getLogger(__name__)
 sys.path.append("../")
+
 from fondant.pipeline import ComponentOp, Pipeline
 
 
 PIPELINE_NAME = "cc-image-filter-pipeline"
 PIPELINE_DESCRIPTION = "Load cc image dataset"
-BASE_PATH = "./data"
+BASE_PATH = "./data-dir"
 
 # Define pipeline
 pipeline = Pipeline(pipeline_name=PIPELINE_NAME, base_path=BASE_PATH)

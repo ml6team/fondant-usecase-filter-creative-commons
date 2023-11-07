@@ -1,13 +1,12 @@
 # Pipeline code goes here
-from pathlib import Path
 import logging
 import sys
 
-logger = logging.getLogger(__name__)
-sys.path.append("../")
-
 from fondant.pipeline import ComponentOp, Pipeline
 
+
+logger = logging.getLogger(__name__)
+sys.path.append("../")
 
 PIPELINE_NAME = "cc-image-filter-pipeline"
 PIPELINE_DESCRIPTION = "Load cc image dataset"
@@ -32,7 +31,7 @@ load_from_hf_hub = ComponentOp(
     arguments={
         "dataset_name": "fondant-ai/fondant-cc-25m",
         "column_name_mapping": load_component_column_mapping,
-        "n_rows_to_load": 100,  # Here you can modify the number of images you want to download.
+        "n_rows_to_load": 100,  # Modify the number of images you want to download.
     },
 )
 

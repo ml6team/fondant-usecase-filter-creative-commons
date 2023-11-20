@@ -1,10 +1,19 @@
-# Creative common license dataset
+# Creative commons licensed data pipeline
 
-## Overview
+<p align="center">
+    <a href="https://github.com/ml6team/fondant">
+        <img src="https://raw.githubusercontent.com/ml6team/fondant/main/docs/art/fondant_banner.svg" height="150px"/>
+    </a>
+</p>
+<p align="center">
+</p>
 
-We present a sample pipeline that demonstrates how to effectively utilize a creative
-commons image dataset within a fondant pipeline. This dataset comprises images from diverse sources
-and is available in various data formats.
+## Introduction
+
+This repository contains a [Fondant](https://fondant.ai) pipeline to load and filter the 
+[fondant-cc-25m](https://huggingface.co/datasets/fondant-ai/fondant-cc-25m) dataset. This 
+dataset contains more than 25 million images with a creative commons license, extracted from 
+CommonCrawl.
 
 ### Pipeline overview
 

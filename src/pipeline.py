@@ -6,7 +6,7 @@ from fondant.pipeline import Pipeline
 
 PIPELINE_NAME = "cc-image-filter-pipeline"
 PIPELINE_DESCRIPTION = "Load cc image dataset"
-BASE_PATH = "./fondant-artifacts"
+BASE_PATH = "./data-dir"
 
 # Create data directory if it doesn't exist
 Path(BASE_PATH).mkdir(parents=True, exist_ok=True)

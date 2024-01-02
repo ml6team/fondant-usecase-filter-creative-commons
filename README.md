@@ -46,6 +46,6 @@ fondant run local pipeline.py
 After the pipeline is succeeded you can explore the data by using the fondant data explorer:
 
 ```bash
-fondant explore --base_path ./fondant-artifacts
+fondant explore --base_path ./data-dir
 ```
 

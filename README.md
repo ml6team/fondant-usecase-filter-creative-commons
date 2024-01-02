@@ -25,6 +25,8 @@ Pipeline Steps:
   The pipeline begins by loading the image dataset from Huggingface Hub.
 - [Download Images](https://github.com/ml6team/fondant/tree/main/components/download_images):
   The download image component download images and stores them to parquet.
+- [Filter Images](https://github.com/ml6team/fondant/tree/main/components/filter_image_resolution):
+  The filter image component filters images based on their resolution.
 
 ## Running the sample pipeline and explore the data
 
@@ -40,15 +42,10 @@ fondant run local pipeline.py
 > Therefore, you can modify this line:
 > `"n_rows_to_load": 1000`
 
-If you wish to run the entire pipeline, including the filtering step, use the following command:
-
-```bash
-fondant run local filter_pipeline
-```
 
 After the pipeline is succeeded you can explore the data by using the fondant data explorer:
 
 ```bash
-fondant explore --base_path ./data
+fondant explore --base_path ./data-dir
 ```
 

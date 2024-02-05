@@ -15,6 +15,9 @@ This repository contains a [Fondant](https://fondant.ai) pipeline to load and fi
 dataset contains more than 25 million images with a creative commons license, extracted from 
 CommonCrawl.
 
+You can either use the [notebook](./src/notebook.ipynb) to interactively build the pipeline, or 
+follow along with the README below to use the CLI.
+
 ### Pipeline overview
 
 The primary goal of this sample is to showcase how you can use a Fondant pipeline and reusable

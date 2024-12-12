@@ -10,15 +10,17 @@
 
 ## Introduction
 
-This repository contains a [Fondant](https://fondant.ai) pipeline to load and filter the 
+This repository contains a [Fondant](https://fondant.ai) pipeline to create, load and filter the 
 [fondant-cc-25m](https://huggingface.co/datasets/fondant-ai/fondant-cc-25m) dataset. This 
 dataset contains more than 25 million images with a creative commons license, extracted from 
 CommonCrawl.
 
-You can either use the [notebook](./src/notebook.ipynb) to interactively build the pipeline, or 
+You can either use the [notebook](./src/notebook.ipynb) to interactively build the image filtering pipeline, or 
 follow along with the README below to use the CLI.
 
-### Pipeline overview
+If you are interested to create your own creative commons licenced dataset follow the README in [image_extraction](./image_extraction/README.md).
+
+### Image filtering Pipeline overview
 
 The primary goal of this sample is to showcase how you can use a Fondant pipeline and reusable
 components to load an image dataset from HuggingFace Hub and download all images.
